@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "BC27 Azure VM",
+            "type": "al",
+            "request": "launch",
+            "environmentType": "OnPrem",
+            "server": "http://[REDACTED-SERVER-IP]",
+            "serverInstance": "BC",
+            "authentication": "UserPassword",
+            "startupObjectType": "Page",
+            "startupObjectId": 22
+        },
+        {
+            "name": "AL: Generated Snapshot request",
+            "request": "snapshotInitialize",
+            "type": "al",
+            "server": "http://[REDACTED-SERVER-IP]",
+            "serverInstance": "BC",
+            "authentication": "UserPassword",
+            "port": 7049,
+            "sessionId": 12,
+            "breakOnNext": "WebClient",
+            "executionContext": "DebugAndProfile"
+        },
+        {
+            "name": "AL: Generated Attach request",
+            "request": "attach",
+            "type": "al",
+            "server": "http://[REDACTED-SERVER-IP]",
+            "serverInstance": "BC",
+            "authentication": "UserPassword",
+            "port": 7049,
+            "sessionId": 12,
+            "breakOnNext": "WebClient",
+            "breakOnError": "ExcludeTry"
+        },
+        {
+            "name": "AL: Generated Download Symbols request",
+            "request": "launch",
+            "type": "al",
+            "server": "http://[REDACTED-SERVER-IP]",
+            "serverInstance": "BC",
+            "authentication": "UserPassword",
+            "port": 7049
+        }
+    ]
+}
