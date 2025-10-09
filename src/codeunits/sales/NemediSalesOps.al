@@ -2,7 +2,7 @@
 // Provides business logic for sales order operations
 // Main function: ReopenSalesOrder - safely reopens sales orders using standard BC logic
 
-namespace DefaultPublisher.ALProject3;
+namespace nemEDI.Core;
 
 using Microsoft.Sales.Document;
 
