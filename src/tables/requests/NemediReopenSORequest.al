@@ -2,7 +2,7 @@
 // Temporary table used for API operations to reopen sales orders
 // Contains request parameters and response data
 
-namespace DefaultPublisher.ALProject3;
+namespace nemEDI.Core;
 
 table 50120 "Nemedi Reopen SO Request"
 {

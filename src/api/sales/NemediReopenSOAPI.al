@@ -3,7 +3,7 @@
 // URL: POST /api/nemedi/core/v1.0/companies(<companyId>)/reopenSalesOrders
 // Body: { "orderNo": "SO012345" }
 
-namespace DefaultPublisher.ALProject3;
+namespace nemEDI.Core;
 
 page 50120 "Nemedi Reopen SO API"
 {

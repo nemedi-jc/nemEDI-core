@@ -2,7 +2,7 @@
 // Provides read/modify access to Sales Header for reopen operations
 // Assignable to users who need access to the Sales Order Reopen API
 
-namespace DefaultPublisher.ALProject3;
+namespace nemEDI.Core;
 
 using Microsoft.Sales.Document;
 
