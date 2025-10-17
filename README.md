@@ -1,4 +1,4 @@
-# 🔄 Nemedi Sales Order API - ALProject3
+# 🔄 Nemedi Sales Order API - nemEDI Core
 
 Welcome to the **Nemedi Sales Order Reopen API** project - a complete Business Central AL extension that provides REST API endpoints for sales order operations.
 
@@ -23,6 +23,9 @@ This project provides a production-ready Sales Order API for Business Central wi
 | **[API Reference](docs/api-reference.md)** | Complete API documentation, testing instructions, and troubleshooting |
 | **[Infrastructure Setup](docs/infrastructure-setup.md)** | Step-by-step guide to set up Business Central on Azure |
 | **[VM Management](docs/vm-management.md)** | How to start/stop your Azure VM to minimize costs |
+| **[Project Summary](docs/project-summary.md)** | Complete development history and architecture documentation |
+| **[Client Installation Guide (English)](docs/client-email-template-en.md)** | Installation guide for Business Central customers |
+| **[Client Installation Guide (Danish)](docs/client-email-template-da.md)** | Installationsguide til Business Central kunder |
 
 ---
 
@@ -37,6 +40,10 @@ This project provides a production-ready Sales Order API for Business Central wi
 1. Follow the **[Infrastructure Setup](docs/infrastructure-setup.md)** to deploy to Azure
 2. Use **[VM Management](docs/vm-management.md)** to control costs
 3. Connect VS Code using the provided `launch.json` configuration
+
+### For Business Central Customers
+1. **English**: Follow the **[Client Installation Guide](docs/client-email-template-en.md)** to install the extension
+2. **Danish**: Følg **[installationsguiden](docs/client-email-template-da.md)** for at installere udvidelsen
 
 ---
 
@@ -56,9 +63,12 @@ This project provides a production-ready Sales Order API for Business Central wi
 │   └── permissions/
 │       └── NemediPermissions.al        # Permission set (ID 50111)
 ├── docs/                             # Documentation
-│   ├── api-reference.md              # API usage guide
-│   ├── infrastructure-setup.md       # Azure deployment guide
-    └── vm-management.md              # Cost optimization guide
+│   ├── api-reference.md
+│   ├── infrastructure-setup.md
+│   ├── vm-management.md
+│   ├── project-summary.md
+│   ├── client-email-template-en.md
+│   └── client-email-template-da.md
 └── app.json                          # AL project configuration
 ```
 
