@@ -232,7 +232,7 @@ src/
   - 80 (Web Client)
 - **Authentication**: Basic Auth ([DEV_CREDENTIALS])
 
-> **🧪 Development Environment:** This is a sandbox environment for development and testing purposes.
+> **🧪 Development Environment:** This is a srg purposes.
 
 ### Deployment Process
 1. `AL: Download Symbols`
