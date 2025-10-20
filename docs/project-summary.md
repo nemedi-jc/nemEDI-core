@@ -224,13 +224,15 @@ src/
 ## 🌍 Infrastructure Context
 
 ### Development Environment
-- **Azure VM**: Windows Server 2022 with BC v27
-- **Public IP**: [REDACTED-SERVER-IP]
+- **Azure VM**: Windows Server 2022 with BC v27 (Sandbox/Development)
+- **Public IP**: [DEVELOPMENT_SERVER_IP]
 - **Ports**: 
   - 7048 (API/OData)
   - 7049 (Development)
   - 80 (Web Client)
-- **Authentication**: Basic Auth (admin/[REDACTED-PASSWORD])
+- **Authentication**: Basic Auth ([DEV_CREDENTIALS])
+
+> **🧪 Development Environment:** This is a sandbox environment for development and testing purposes.
 
 ### Deployment Process
 1. `AL: Download Symbols`

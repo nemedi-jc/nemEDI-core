@@ -173,3 +173,31 @@ appsettings.local.json
 appsettings.*.json
 !appsettings.json
 !appsettings.Development.json
+
+# Environment and credential files
+.env*
+*.env
+credentials.json
+config.json
+secrets.json
+auth.json
+server-config.json
+
+# VS Code workspace settings that might contain sensitive info
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# README files with sensitive information (use templates instead)
+README.local.md
+README.prod.md
+README.credentials.md
+
+# Business Central specific sensitive files
+bc-config.json
+connection-strings.json
+
+# Azure and deployment configuration
+azure.json
+deployment.json
+infrastructure.json

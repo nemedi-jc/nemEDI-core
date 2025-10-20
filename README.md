@@ -26,6 +26,7 @@ This project provides a production-ready Sales Order API for Business Central wi
 | **[Project Summary](docs/project-summary.md)** | Complete development history and architecture documentation |
 | **[Client Installation Guide (English)](docs/client-email-template-en.md)** | Installation guide for Business Central customers |
 | **[Client Installation Guide (Danish)](docs/client-email-template-da.md)** | Installationsguide til Business Central kunder |
+| **[Security Guidelines](SECURITY.md)** | Security configuration and credential management |
 
 ---
 
@@ -33,8 +34,10 @@ This project provides a production-ready Sales Order API for Business Central wi
 
 ### For API Users
 1. Read the **[API Reference](docs/api-reference.md)** for endpoint details and testing
-2. Use the provided authentication: `admin / [REDACTED-PASSWORD]`
-3. Test with: `POST http://[REDACTED-SERVER-IP]:7048/BC/api/nemedi/core/v1.0/companies(<companyId>)/reopenSalesOrders`
+2. Contact the administrator for authentication credentials (see **[Security Guidelines](SECURITY.md)**)
+3. Test with: `POST http://[YOUR-DEV-SERVER]:7048/BC/api/nemedi/core/v1.0/companies(<companyId>)/reopenSalesOrders`
+
+> **🧪 Development Environment Note:** This project includes setup instructions for a sandbox/test Business Central environment suitable for development and testing purposes.
 
 ### For Developers  
 1. Follow the **[Infrastructure Setup](docs/infrastructure-setup.md)** to deploy to Azure
@@ -76,17 +79,21 @@ This project provides a production-ready Sales Order API for Business Central wi
 
 ## 🔐 Authentication
 
-- **Username:** `admin`
-- **Password:** `[REDACTED-PASSWORD]`  
-- **Authorization:** `Basic [REDACTED-AUTH-HEADER]`
+- **Username:** [Contact administrator]
+- **Password:** [Contact administrator]  
+- **Authorization:** [Will be provided upon request]
+
+> **🔒 Security Note:** Credentials are not stored in this repository for security reasons. Contact the system administrator to obtain access credentials for the development environment. See **[Security Guidelines](SECURITY.md)** for more information.
 
 ---
 
 ## 🌍 Environment
 
-- **Web Client:** `http://[REDACTED-SERVER-IP]/BC`
-- **API Base:** `http://[REDACTED-SERVER-IP]:7048/BC/api/`
+- **Web Client:** `http://[DEV-SERVER]/BC`
+- **API Base:** `http://[DEV-SERVER]:7048/BC/api/`
 - **Development:** Port 7049 (VS Code connection)
+
+> **🧪 Development/Sandbox Environment:** This setup is designed for development and testing purposes. Server details are provided separately for security reasons. See **[Security Guidelines](SECURITY.md)** for credential management.
 
 ---
 

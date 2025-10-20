@@ -49,13 +49,17 @@ POST /api/nemedi/core/v1.0/companies(<companyId>)/reopenSalesOrders
 
 ## Testing Instructions
 
+> **🧪 Development Environment:** These examples are for development/sandbox testing. Contact administrator for actual credentials.
+
 ### Step 1: Get Company ID
 **Request:**
 ```http
-GET http://[REDACTED-SERVER-IP]:7048/BC/api/v2.0/companies
-Authorization: Basic [REDACTED-AUTH-HEADER]
+GET http://[YOUR-DEV-SERVER]:7048/BC/api/v2.0/companies
+Authorization: Basic [YOUR-BASIC-AUTH-HEADER]
 Accept: application/json
 ```
+
+> **Security Note:** Replace `[YOUR-DEV-SERVER]` with your actual development server address and `[YOUR-BASIC-AUTH-HEADER]` with your Base64 encoded credentials.
 
 **Expected Response:**
 ```json
@@ -73,8 +77,8 @@ Accept: application/json
 ### Step 2: Test Sales Order Reopen API
 **Request:**
 ```http
-POST http://[REDACTED-SERVER-IP]:7048/BC/api/nemedi/core/v1.0/companies(your-company-id-guid-here)/reopenSalesOrders
-Authorization: Basic [REDACTED-AUTH-HEADER]
+POST http://[YOUR-DEV-SERVER]:7048/BC/api/nemedi/core/v1.0/companies(your-company-id-guid-here)/reopenSalesOrders
+Authorization: Basic [YOUR-BASIC-AUTH-HEADER]
 Content-Type: application/json
 Accept: application/json
 
@@ -123,8 +127,8 @@ Accept: application/json
 1. **Method:** POST
 2. **Authorization Tab:**
    - Type: Basic Auth
-   - Username: `admin`
-   - Password: `[REDACTED-PASSWORD]`
+   - Username: `[PROVIDED_BY_ADMIN]`
+   - Password: `[PROVIDED_BY_ADMIN]`
 3. **Headers:**
    - `Accept: application/json`
    - `Content-Type: application/json`
@@ -135,18 +139,20 @@ Accept: application/json
    }
    ```
 
+> **🧪 Dev Environment:** Contact administrator for development server credentials.
+
 ### cURL Examples
 **Get Companies:**
 ```bash
-curl -X GET "http://[REDACTED-SERVER-IP]:7048/BC/api/v2.0/companies" \
-  -H "Authorization: Basic [REDACTED-AUTH-HEADER]" \
+curl -X GET "http://[YOUR-DEV-SERVER]:7048/BC/api/v2.0/companies" \
+  -H "Authorization: Basic [YOUR-BASIC-AUTH-HEADER]" \
   -H "Accept: application/json"
 ```
 
 **Reopen Sales Order:**
 ```bash
-curl -X POST "http://[REDACTED-SERVER-IP]:7048/BC/api/nemedi/core/v1.0/companies(your-company-id)/reopenSalesOrders" \
-  -H "Authorization: Basic [REDACTED-AUTH-HEADER]" \
+curl -X POST "http://[YOUR-DEV-SERVER]:7048/BC/api/nemedi/core/v1.0/companies(your-company-id)/reopenSalesOrders" \
+  -H "Authorization: Basic [YOUR-BASIC-AUTH-HEADER]" \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -d '{"orderNo": "SO012345"}'
@@ -182,7 +188,7 @@ The API handles different sales order statuses intelligently:
 ### Common Issues
 
 **401 Unauthorized**
-- ✅ Verify Basic Auth credentials: `admin / [REDACTED-PASSWORD]`
+- ✅ Verify Basic Auth credentials with administrator-provided values
 - ✅ Check if user has necessary permissions (assign `NemediApiRWM` permission set)
 
 **404 Not Found**
@@ -195,7 +201,7 @@ The API handles different sales order statuses intelligently:
 - ✅ Verify port 7048 is published in Docker container: `docker run -p 7048:7048`
 - ✅ Check Azure Network Security Group (NSG) allows inbound traffic on port 7048
 - ✅ Verify Windows Firewall on Azure VM allows port 7048
-- ✅ Test internal connectivity: `telnet [REDACTED-SERVER-IP] 7048`
+- ✅ Test internal connectivity: `telnet [YOUR-DEV-SERVER] 7048`
 
 **Invalid Request Format**
 - ✅ Ensure Content-Type is `application/json`
