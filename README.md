@@ -21,6 +21,7 @@ This project provides a production-ready Sales Order API for Business Central wi
 | Document | Description |
 |----------|-------------|
 | **[API Reference](docs/api-reference.md)** | Complete API documentation, testing instructions, and troubleshooting |
+| **[Build Guide](docs/build-guide.md)** | How to build the extension into a deployable .app file |
 | **[Infrastructure Setup](docs/infrastructure-setup.md)** | Step-by-step guide to set up Business Central on Azure |
 | **[VM Management](docs/vm-management.md)** | How to start/stop your Azure VM to minimize costs |
 | **[Project Summary](docs/project-summary.md)** | Complete development history and architecture documentation |
@@ -43,6 +44,14 @@ This project provides a production-ready Sales Order API for Business Central wi
 1. Follow the **[Infrastructure Setup](docs/infrastructure-setup.md)** to deploy to Azure
 2. Use **[VM Management](docs/vm-management.md)** to control costs
 3. Connect VS Code using the provided `launch.json` configuration
+4. Build the extension using the **[Build Guide](docs/build-guide.md)**
+
+### For Building and Deployment
+1. **Download Symbols:** `AL: Download Symbols` (Ctrl+Shift+P)
+2. **Build Extension:** `AL: Package` (Ctrl+Shift+P) 
+3. **Deploy:** `AL: Publish` (Ctrl+F5)
+4. **Assign Permissions:** Add `NemediApiRWM` to API users
+5. **Complete guide:** See **[Build Guide](docs/build-guide.md)** for detailed instructions
 
 ### For Business Central Customers
 1. **English**: Follow the **[Client Installation Guide](docs/client-email-template-en.md)** to install the extension
