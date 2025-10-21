@@ -50,7 +50,7 @@ This project provides a production-ready Sales Order API for Business Central wi
 1. **Download Symbols:** `AL: Download Symbols` (Ctrl+Shift+P)
 2. **Build Extension:** `AL: Package` (Ctrl+Shift+P) 
 3. **Deploy:** `AL: Publish` (Ctrl+F5)
-4. **Assign Permissions:** Add `NemediApiRWM` to API users
+4. **Assign Permissions:** Add `NEMEDIAPIRWM` *(Nemedi API R/W (Sales))* to API users
 5. **Complete guide:** See **[Build Guide](docs/build-guide.md)** for detailed instructions
 
 ### For Business Central Customers

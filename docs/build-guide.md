@@ -123,7 +123,7 @@ Or manually upload via:
 
 ### Step 3: Install and Configure
 1. **Install Extension** in target environment
-2. **Assign Permissions** - Add `NemediApiRWM` permission set to API users
+2. **Assign Permissions** - Add `NEMEDIAPIRWM` *(Nemedi API R/W (Sales))* permission set to API users
 3. **Test API Endpoints** - Verify functionality works
 
 ## 🔍 Troubleshooting Build Issues
@@ -183,7 +183,7 @@ Warning AL0432: Method 'OldMethod' is obsolete
    ```
 
 3. **Verify Permissions**
-   - Assign `NemediApiRWM` permission set
+   - Assign `NEMEDIAPIRWM` permission set
    - Test with non-admin user
 
 ### Post-Deployment Validation

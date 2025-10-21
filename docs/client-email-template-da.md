@@ -17,10 +17,12 @@ Modulet giver nemEDI mulighed for at genåbne salgsordrer via API’et — med p
 
 ## 🔹 Trin 2 – Tildel rettigheder
 1. Gå til **Brugere** (*Users*).  
-2. Find den **Application User**, som er knyttet til jeres eksisterende *Entra App* (den bruges til nemEDI’s API-adgang).  
+2. Find den **Application User**, som er knyttet til jeres eksisterende *Entra App* (den bruges til nemEDI's API-adgang).  
 3. Åbn brugeren og tilføj følgende permission set:  
-   ✅ **nemEDI CORE – Reopen Sales Orders**  
-   (Dette permission set følger automatisk med modulet.)  
+   ✅ **NEMEDIAPIRWM** *(Nemedi API R/W (Sales))*  
+   (Dette permission set følger automatisk med modulet.)
+
+> **Bemærk:** Du kan se dette permission set vist som "Nemedi API R/W (Sales)" eller "NEMEDIAPIRWM" afhængigt af din Business Central-version. Begge refererer til det samme permission set.
 
 ---
 
